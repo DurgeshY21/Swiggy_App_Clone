@@ -36,8 +36,8 @@ const GroceryCity = () => {
 
       <div className="bg-gradient-to-b from-[#C12F82] to-[#9A2983] w-[70%] rounded-3xl">
         <div className="flex flex-row  justify-between">
-          <div>
-            <div className="bg-red-700 rounded-xl p-2">17 mins</div>
+          <div className="flex flex-row justify-between space-x-4">
+            <div className="bg-red-700 rounded-xl p-2">17 <br/>mins</div>
             <p>Delivery to Others</p>
           </div>
 
