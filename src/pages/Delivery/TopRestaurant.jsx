@@ -163,7 +163,7 @@ const restaurants = [
   // Add more restaurant data here if needed
 ];
 
-const TopRestaurant = () => {
+const TopRestaurant = ({ showNavbar = true, paddingX = "px-48"}) => {
   const chunkArray = (arr, size) => {
     const result = [];
     for (let i = 0; i < arr.length; i += size) {
@@ -174,13 +174,18 @@ const TopRestaurant = () => {
 
   return (
     <div className="">
-      <div>
+    {
+      showNavbar && (
+        <div>
         <Navbar />
       </div>
+      )
+    }
+      
 
-      <div className="px-48 mt-8">
+      <div className={`${paddingX} mt-8`}>
         <p className="text-2xl font-bold">
-          Restaurants with online food delivery in Ludhiana{" "}
+          Restaurants with online food delivery in Chandigarh{" "}
         </p>
 
         <div className="flex flex-row  space-x-4 mt-5 mb-10">

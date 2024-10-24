@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
 
@@ -8,7 +9,7 @@ const GroceryLocation = () => {
 
            <div className="flex flex-col justify-center items-center space-y-5 ">
             <div className="flex flex-row items-center space-x-5 justify-between w-full">
-                <button type="button" className="w-[25%] border-[1px] border-gray-400 rounded-xl p-3 font-semibold">Order Grocery Online in Kolkata</button>
+                <Link className="w-[25%]" to="/grocery"><button type="button" className=" border-[1px] border-gray-400 rounded-xl p-3 font-semibold">Order Grocery Online in Kolkata</button></Link>
                 <button type="button" className="w-[25%] border-[1px] border-gray-400 rounded-xl p-3 font-semibold">Order Grocery Online in Pune</button>
                 <button type="button" className="w-[25%] border-[1px] border-gray-400 rounded-xl p-3 font-semibold">Order Grocery Online in Gujrat</button>
                 <button type="button" className="w-[25%] border-[1px] border-gray-400 rounded-xl p-3 font-semibold">Order Grocery Online in Delhi</button>

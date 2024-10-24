@@ -120,7 +120,7 @@ const HeroSection = () => {
       
         </Link>
         
-        <Link to="" className="w-[20%]">
+        <Link to="/dineout" className="w-[20%]">
         <div className=" bg-white rounded-2xl p-6 h-[320px] transform transition-transform duration-300 hover:scale-105">
         <p className="text-3xl font-bold text-[#48474C]">DINEOUT</p>
         <p className="text-lg pt-2 font-semibold text-[#8F8F8F]">EAT OUT & SAVE MORE</p>
@@ -132,7 +132,7 @@ const HeroSection = () => {
         </div>
         </Link>
         
-        <Link to="/toprestro" className="w-[20%]">
+        <Link to="/genie" className="w-[20%]">
         <div className=" bg-white rounded-2xl p-6 h-[320px] transform transition-transform duration-300 hover:scale-105">
         <p className="text-3xl font-bold text-[#48474C]">GENIE</p>
         <p className="text-lg pt-2 font-semibold text-[#8F8F8F]">PICK UP & DROP</p>
