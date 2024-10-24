@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this CSS to your custom styles */
+.slick-slide {
+    padding-right: 17px; /* Adjust the padding to the gap size you need */
+  }
+  

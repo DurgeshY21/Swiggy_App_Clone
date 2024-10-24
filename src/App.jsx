@@ -1,5 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import { HeroSection } from "./layout";
+import HomePage from "./pages/Home/HomePage";
+import TopRestaurant from "./pages/Delivery/TopRestaurant";
+import DineoutPage from "./pages/Dineout/DineoutPage";
 
 function App() {
   
@@ -8,8 +10,11 @@ function App() {
     <div>
       <Router>
          <Routes>
-            <Route path="/" element={<HeroSection/>} />
-            <Route path="/hero" element={<HeroSection/>} />
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/home" element={<HomePage/>} />
+            <Route path="/toprestro" element={<TopRestaurant />} />
+            <Route path="/dineout" element={<DineoutPage />}/>
+            
          </Routes>
       </Router>
      

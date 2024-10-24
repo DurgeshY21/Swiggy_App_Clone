@@ -6,6 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 import foodImg from "../../assets/food.png";
 import dineoutImg from "../../assets/dineout.png";
 import genieImg from "../../assets/genie.png";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     const [selectedLocation, setSelectedLocation] = useState("Enter your delivery location");
@@ -103,7 +104,10 @@ const HeroSection = () => {
 
 
       <div className="flex flex-row justify-center space-x-10 w-full pt-10">
-        <div className="w-[20%] bg-white rounded-2xl p-6 h-[320px]">
+
+      <Link to="/toprestro" className="w-[20%]">
+     
+        <div className=" bg-white rounded-2xl p-6 h-[320px] transform transition-transform duration-300 hover:scale-105">
          <p className="text-3xl font-bold text-[#48474C]">FOOD DELIVERY</p>
          <p className="text-lg pt-2 font-semibold text-[#8F8F8F]">FROM RESTAURANTS</p>
          <p className="text-md mt-4 text-[#FF5200] font-bold bg-gradient-to-r from-[#fae3db] to-white rounded-2xl p-2">UPTO 60% OFF</p>
@@ -113,8 +117,11 @@ const HeroSection = () => {
          </div>
         
         </div>
-
-        <div className="w-[20%] bg-white rounded-2xl p-6 h-[320px]">
+      
+        </Link>
+        
+        <Link to="" className="w-[20%]">
+        <div className=" bg-white rounded-2xl p-6 h-[320px] transform transition-transform duration-300 hover:scale-105">
         <p className="text-3xl font-bold text-[#48474C]">DINEOUT</p>
         <p className="text-lg pt-2 font-semibold text-[#8F8F8F]">EAT OUT & SAVE MORE</p>
         <p className="text-md mt-4 text-[#FF5200] font-bold bg-gradient-to-r from-[#fae3db] to-white rounded-2xl p-2">UPTO 50% OFF</p>
@@ -123,8 +130,10 @@ const HeroSection = () => {
          <p><img src={dineoutImg} alt="" className="ml-10" /></p>
          </div>
         </div>
-
-        <div className="w-[20%] bg-white rounded-2xl p-6 h-[320px]">
+        </Link>
+        
+        <Link to="/toprestro" className="w-[20%]">
+        <div className=" bg-white rounded-2xl p-6 h-[320px] transform transition-transform duration-300 hover:scale-105">
         <p className="text-3xl font-bold text-[#48474C]">GENIE</p>
         <p className="text-lg pt-2 font-semibold text-[#8F8F8F]">PICK UP & DROP</p>
         <div className="pt-14 flex flex-row justify-between items-center">
@@ -132,6 +141,7 @@ const HeroSection = () => {
          <p><img src={genieImg} alt="" className="ml-16 " /></p>
          </div>
         </div>
+        </Link>
       </div>
       
   
